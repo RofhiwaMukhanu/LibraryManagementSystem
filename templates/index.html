@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Library</title>
+</head>
+<body>
+    <h1>Available Books</h1>
+    <ul>
+    {% for book in books %}
+        <li>{{ book.display_details() }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
